@@ -1,0 +1,21 @@
+<mat-card>
+    <!-- <button mat-raised-button color="primary" (click)="onSetTheme('default-theme')">Default</button>
+    <button mat-raised-button color="primary" (click)="onSetTheme('dark-theme')">Dark</button>
+    <button mat-raised-button color="primary" (click)="onSetTheme('light-theme')">Light</button> -->
+
+
+    <!-- <mat-radio-group [(ngModel)]="newtheme">
+        <mat-radio-button [value]="light" (change)="ChangeTheme($event)">Light</mat-radio-button>
+        <mat-radio-button [value]="dark" (change)="ChangeTheme($event)">Dark</mat-radio-button>
+    </mat-radio-group> -->
+
+    <section class="example-section">
+        <mat-slide-toggle
+        [checked]="myFlagForButtonToggle" 
+        (change)="ChangeTheme($event.source.checked)">
+          Slide me!
+        </mat-slide-toggle>
+      </section>
+
+    {{myFlagForButtonToggle}}
+</mat-card>

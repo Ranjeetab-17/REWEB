@@ -1,0 +1,63 @@
+<div style="padding-top:2em;padding-bottom:2em;">
+  <div class="example-container mat-elevation-z8">
+    <div class="example-header">
+      <mat-form-field>
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+      </mat-form-field>
+    </div>
+    <mat-progress-bar mode="indeterminate" color="purple" *ngIf="!dataSource"></mat-progress-bar>
+
+    <mat-table #table [dataSource]="dataSource">
+
+      <ng-container matColumnDef="Id">
+        <mat-header-cell *matHeaderCellDef> Id </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.Id}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="Status">
+        <mat-header-cell *matHeaderCellDef> Status </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.Status}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="InvoiceDate">
+        <mat-header-cell *matHeaderCellDef> InvoiceDate </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.InvoiceDate|date}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="CustomerName">
+        <mat-header-cell *matHeaderCellDef>CustomerName </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.CustomerName}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="TotalAmount">
+        <mat-header-cell *matHeaderCellDef>TotalAmount</mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.TotalAmount}} </mat-cell>
+      </ng-container>
+
+
+      <ng-container matColumnDef="PaidAmount">
+        <mat-header-cell *matHeaderCellDef>PaidAmount</mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.PaidAmount}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="Action">
+        <mat-header-cell *matHeaderCellDef>Action</mat-header-cell>
+        <mat-cell *matCellDef="let row" nowrap>
+          <button mat-raised-button color="warn">
+            <mat-icon svgIcon="file-find"></mat-icon>
+          </button>&nbsp;
+          <button mat-raised-button color="warn">
+            <mat-icon svgIcon="file-pdf-box"></mat-icon>
+          </button>&nbsp;
+          <button mat-raised-button color="accent">
+            <mat-icon svgIcon="currency-inr"></mat-icon>
+          </button>
+        </mat-cell>
+      </ng-container>
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+    <mat-paginator #paginator [pageSize]="10" [pageSizeOptions]="[5, 10, 20]" [showFirstLastButtons]="true">
+    </mat-paginator>
+  </div>
+</div>

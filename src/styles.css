@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* indigo-pink.css */
+
+.done {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+  }
+
+  .customMenu{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: white;
+  }
+
+  .customHeading{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-family: 'Courier New', Courier, monospace    
+  }
+
+  body{
+    margin:0px !important;
+    zoom:88%;
+  }

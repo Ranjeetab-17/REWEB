@@ -1,0 +1,14 @@
+<div fxLayout.lt="row" 
+     fxLayout.xs="column" 
+     fxLayoutAlign.xs="space-between stretch" 
+     fxLayoutAlign.lt="space-between stretch"
+     fxLayoutWrap>
+     
+  <div *ngFor="let i of values" fxFlex="32%">
+      <mat-card [ngStyle]="{'max-width': '400px',
+                             'margin': '0.5em auto',
+                             'text-align': 'start'}">
+      <mat-card-title>Home Works</mat-card-title>
+    </mat-card>
+  </div>
+</div>

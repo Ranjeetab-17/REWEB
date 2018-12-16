@@ -1,0 +1,159 @@
+<div style="position:absolute;top:0;left:0;right:0;bottom:0;" [appCustomtheme]="'dark-theme'">
+  <mat-sidenav-container fullscreen>
+    <!-- mode="side" #sidenav style="min-width:220px;" -->
+    <mat-sidenav #sidenav [mode]="isLargeScreen() ? 'side' : 'over'" [opened]="isLargeScreen()">
+      <mat-toolbar color="primary" style="height:250px;" align="center">
+        <img mat-card-avatar src="{{userphoto}}" style="height:168px;width:168px;">
+      </mat-toolbar>
+      <mat-nav-list color="warn">
+        <a mat-list-item [routerLink]='["home"]'>
+          <mat-icon>home</mat-icon>&nbsp;
+          <span>Home</span>
+        </a>
+        <a mat-list-item [routerLink]='["worklist"]'>
+          <mat-icon svgIcon="file-find"></mat-icon>&nbsp;
+          <span>Invoice</span>
+        </a>
+        <a mat-list-item [routerLink]='["sregister"]'>
+          <mat-icon svgIcon="cart-outline"></mat-icon>&nbsp;
+          <span>Product</span>
+        </a>
+        <a mat-list-item [routerLink]='["sregister"]'>
+          <mat-icon svgIcon="currency-inr"></mat-icon>&nbsp;
+          <span>Payment</span>
+        </a>
+        <a mat-list-item [routerLink]='["about"]'>
+          <mat-icon>account_circle</mat-icon>&nbsp;
+          <span>Accounts</span>
+        </a>
+        <a mat-list-item [routerLink]='["setting"]'>
+          <mat-icon>settings</mat-icon>&nbsp;
+          <span>Settings</span>
+        </a>
+        <a mat-list-item [routerLink]='["../login"]'>
+          <mat-icon>fingerprint</mat-icon>&nbsp;
+          <span>Logout</span>
+        </a>
+        <a mat-list-item>
+          <mat-icon svgIcon="whatsapp"></mat-icon>&nbsp;
+          <span>8767777640</span>
+        </a>
+      </mat-nav-list>
+
+    </mat-sidenav>
+    <mat-toolbar color="primary" style="min-height:45px;" class="app-toolbar">
+      <div fxLayoutAlign="start center">
+        <span>
+          <button style="background-color:transparent;border-style:none;cursor:pointer;" (click)="sidenav.toggle()">
+            <i class="material-icons toolbar-link-icon" style="color:white;">menu</i>
+          </button>
+        </span>
+      </div>
+
+      <span class="example-spacer" fxLayoutAlign="right">
+        REWEB
+      </span>
+
+      <div class="material-icons mdl-badge mdl-badge--overlap" [attr.data-badge]="1">1</div>
+
+      <div fxShow="true" fxHide.lt-md="true">
+        <span class="example-spacer"></span>
+
+        <span class="example-spacer"></span>
+
+        <span *ngIf="user" class="example-spacer">Hi &nbsp; {{user}}</span>
+
+        <button mat-button>
+          <mat-icon matBadge="10" matBadgeColor="warn">notifications</mat-icon>          
+        </button>
+        <!-- <button mat-button>
+          <mat-icon>message</mat-icon>
+        </button>
+        <button mat-button>
+          <mat-icon svgIcon="cart"></mat-icon>
+        </button> -->
+        <button mat-button [routerLink]='["../login"]'>
+          <mat-icon>fingerprint</mat-icon>&nbsp;
+          <span>Logout</span>
+        </button>
+      </div>
+
+      <div fxLayout.xs="row" fxLayoutAlign="end none">
+        <span fxShow="false" fxShow.lt-md="true">
+          <mat-icon>notifications</mat-icon>
+        </span>
+        <button mat-button [matMenuTriggerFor]="menu">
+          <mat-icon>more_vert
+          </mat-icon>
+        </button>
+      </div>
+
+
+      <mat-menu #menu="matMenu">
+        <div fxShow="false" fxShow.lt-md="true">
+          <button mat-menu-item *ngIf="user">
+            <mat-icon>person</mat-icon>
+            <span class="example-spacer">Hi &nbsp; {{user}}</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>notifications</mat-icon>
+            Notifications
+          </button>
+          <button mat-menu-item>
+            <mat-icon>message</mat-icon>
+            Messages
+          </button>
+        </div>
+        <button mat-menu-item [routerLink]='["register"]'>
+          <mat-icon>person_add</mat-icon>
+          Add Users
+        </button>
+        <button mat-menu-item [routerLink]='["emplist"]'>
+          <mat-icon>people</mat-icon>
+          All Users
+        </button>
+        <button fxShow="false" fxShow.lt-md="true" mat-menu-item [routerLink]='["../login"]'>
+          <mat-icon>fingerprint</mat-icon>&nbsp;
+          <span>Logout</span>
+        </button>
+      </mat-menu>
+    </mat-toolbar>
+
+    <div class="inner-sidenav-content">
+      <div fxFlexLayout="row" fxLayoutAlign="space-around center">
+        <div fxFlex="90%">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+
+    <div class="done" fxLayout="column" fxLayoutGap="15px">
+
+      <a mat-mini-fab color="warn" matTooltip="Instagram in Profile" [matTooltipPosition]="position">
+        <mat-icon svgIcon="instagram"></mat-icon>
+      </a>
+
+      <a mat-mini-fab mat-fab-bottom-right color="primary" matTooltip="Facebook Profile" [matTooltipPosition]="position"
+        href="https://www.facebook.com/ranjeet.prajapati.5">
+        <mat-icon svgIcon="facebook"></mat-icon>
+      </a>
+      <a mat-mini-fab mat-fab-bottom-right color="warn" matTooltip="Pinterest Profile" [matTooltipPosition]="position"
+        href="https://www.facebook.com/ranjeet.prajapati.5">
+        <mat-icon svgIcon="pinterest"></mat-icon>
+      </a>
+
+      <a mat-mini-fab style="background-color: darkturquoise" matTooltip="Twitter Profile" [matTooltipPosition]="position">
+        <mat-icon svgIcon="twitter"></mat-icon>
+      </a>
+      <a mat-mini-fab color="accent" matTooltip="Github in Profile" [matTooltipPosition]="position">
+        <mat-icon svgIcon="github-circle"></mat-icon>
+      </a>
+      <a mat-mini-fab color="warn" matTooltip="Google in Profile" [matTooltipPosition]="position" href="https://plus.google.com/u/0/+RanjeetPrajapati17ab">
+        <mat-icon svgIcon="google-plus"></mat-icon>
+      </a>
+      <a mat-mini-fab matTooltip="Linked in Profile" [matTooltipPosition]="position" color="primary" href="https://www.linkedin.com/in/ranjeet-prajapati-19b36987/">
+        <mat-icon svgIcon="linkedin-box"></mat-icon>
+      </a>
+    </div>
+  </mat-sidenav-container>
+</div>
