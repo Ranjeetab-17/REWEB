@@ -1,5 +1,0 @@
-# REWEB
-
----
-permalink: /index.html
----
