@@ -1,0 +1,12 @@
+{
+    "Department": [
+        {
+            "Deptid": "1",
+            "DeptName": "GMIT"
+        },
+        {
+            "Deptid": "2",
+            "DeptName": "GMIT test"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "SubDepartmentID": "1",
+        "SubDepartmentName": "Web Instituition",
+        "DepartmentID": "1"
+    },
+    {
+        "SubDepartmentID": "2",
+        "SubDepartmentName": "Reval",
+        "DepartmentID": "1"
+    },
+    {
+        "SubDepartmentID": "3",
+        "SubDepartmentName": "Issue Master",
+        "DepartmentID": "1"
+    },
+    {
+        "SubDepartmentID": "4",
+        "SubDepartmentName": "test 1",
+        "DepartmentID": "2"
+    },
+    {
+        "SubDepartmentID": "5",
+        "SubDepartmentName": "test 2",
+        "DepartmentID": "2"
+    },
+    {
+        "SubDepartmentID": "6",
+        "SubDepartmentName": "test 3",
+        "DepartmentID": "2"
+    }
+]
