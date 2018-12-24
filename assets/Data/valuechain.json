@@ -1,0 +1,14 @@
+[
+    {
+        "ValueChainID": "1",
+        "ValueChainName": "Equity"
+    },
+    {
+        "ValueChainID": "2",
+        "ValueChainName": "Fx"
+    },
+    {
+        "ValueChainID": "3",
+        "ValueChainName": "xyz"
+    }
+]
