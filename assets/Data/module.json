@@ -1,0 +1,22 @@
+[
+    {
+        "Id": "1",
+        "ValueChainID": "1",
+        "ModuleName": "Module 1"
+    },
+    {
+        "Id": "2",
+        "ValueChainID": "1",
+        "ModuleName": "Module 2"
+    },
+    {
+        "Id": "3",
+        "ValueChainID": "1",
+        "ModuleName": "Module 3"
+    },
+    {
+        "Id": "4",
+        "ValueChainID": "1",
+        "ModuleName": "Module 4"
+    }
+]
