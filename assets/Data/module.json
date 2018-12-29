@@ -2,21 +2,25 @@
     {
         "Id": "1",
         "ValueChainID": "1",
+        "duration":"2h",
         "ModuleName": "Module 1"
     },
     {
         "Id": "2",
         "ValueChainID": "1",
+        "duration":"1h",
         "ModuleName": "Module 2"
     },
     {
         "Id": "3",
         "ValueChainID": "1",
+        "duration":"1h 30m",
         "ModuleName": "Module 3"
     },
     {
         "Id": "4",
         "ValueChainID": "1",
+        "duration":"40m",
         "ModuleName": "Module 4"
     }
 ]
