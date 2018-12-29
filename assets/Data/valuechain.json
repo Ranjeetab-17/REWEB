@@ -2,51 +2,51 @@
     {
         "ValueChainID": "1",
         "ValueChainName": "Equity",
-        "Icon":"home.svg"
+        "Icon": "home.svg"
     },
     {
         "ValueChainID": "2",
-        "ValueChainName": "Fx",
-        "Icon":"yen.svg"
+        "ValueChainName": "Foreign Exchange",
+        "Icon": "yen.svg"
     },
     {
         "ValueChainID": "3",
         "ValueChainName": "My Learning",
-        "Icon":"mortarboard.svg"
+        "Icon": "mortarboard.svg"
     },
     {
         "ValueChainID": "4",
         "ValueChainName": "My Awards",
-        "Icon":"medal.svg"
+        "Icon": "medal.svg"
     },
     {
         "ValueChainID": "5",
         "ValueChainName": "Slab",
-        "Icon":""
+        "Icon": ""
     },
     {
         "ValueChainID": "6",
         "ValueChainName": "Bonds",
-        "Icon":"certificate.svg"
+        "Icon": "certificate.svg"
     },
     {
         "ValueChainID": "7",
         "ValueChainName": "Regulations",
-        "Icon":""
+        "Icon": ""
     },
     {
         "ValueChainID": "8",
         "ValueChainName": "Derivatives",
-        "Icon":""
+        "Icon": ""
     },
     {
         "ValueChainID": "8",
         "ValueChainName": "Prime Brokerage",
-        "Icon":""
+        "Icon": ""
     },
     {
         "ValueChainID": "8",
         "ValueChainName": "Structured Products",
-        "Icon":"newspaper.svg"
+        "Icon": "newspaper.svg"
     }
 ]
