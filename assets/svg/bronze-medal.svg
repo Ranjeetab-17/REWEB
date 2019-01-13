@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 464.72 464.72" style="enable-background:new 0 0 464.72 464.72;" xml:space="preserve" width="512px" height="512px" class=""><g><g>
+	<path style="fill:#03AA6F;" d="M232.76,98.16L276.36,216h-96L232.76,98.16z" data-original="#03AA6F" class=""/>
+	<path style="fill:#03AA6F;" d="M372.36,0l-96,216l-43.6-117.84L276.36,0H372.36z" data-original="#03AA6F" class=""/>
+</g><path style="fill:#038255;" d="M232.76,98.16L180.36,216l-88-216h104L232.76,98.16z" data-original="#038255" class=""/><g>
+	<path style="fill:#C68D3B" d="M228.36,280.72c48.601,0,88,39.399,88,88s-39.399,88-88,88s-88-39.399-88-88   C140.391,320.132,179.772,280.751,228.36,280.72z M284.36,368.72c0-30.928-25.072-56-56-56s-56,25.072-56,56s25.072,56,56,56   C259.273,424.685,284.325,399.633,284.36,368.72z" data-original="#FFB546" class="" data-old_color="#A87224"/>
+	<circle style="fill:#C68D3B" cx="228.36" cy="368.72" r="56" data-original="#FFB546" class="" data-old_color="#A87224"/>
+</g><g>
+	<path style="fill:#B8802D" d="M228.36,464.72c-53.019,0-96-42.981-96-96s42.981-96,96-96s96,42.981,96,96   C324.303,421.716,281.356,464.663,228.36,464.72z M228.36,288.72c-44.183,0-80,35.817-80,80s35.817,80,80,80s80-35.817,80-80   C308.312,324.557,272.523,288.768,228.36,288.72z" data-original="#F5A329" class="active-path" data-old_color="#CA8929"/>
+	<path style="fill:#B8802D" d="M228.36,432.72c-35.346,0-64-28.654-64-64s28.654-64,64-64s64,28.654,64,64   C292.32,404.05,263.69,432.68,228.36,432.72z M228.36,320.72c-26.51,0-48,21.49-48,48s21.49,48,48,48s48-21.49,48-48   C276.334,342.221,254.859,320.746,228.36,320.72z" data-original="#F5A329" class="active-path" data-old_color="#CA8929"/>
+	<path style="fill:#B8802D" d="M228.36,288c-2.518,0-4.889-1.186-6.4-3.2l-24-32l12.8-9.6l17.6,23.464l17.6-23.464l12.8,9.6l-24,32   C233.249,286.814,230.878,288,228.36,288z" data-original="#F5A329" class="active-path" data-old_color="#CA8929"/>
+	<path style="fill:#B8802D" d="M276.36,256h-96c-4.418,0-8-3.582-8-8v-32c0-4.418,3.582-8,8-8h96c4.418,0,8,3.582,8,8v32   C284.36,252.418,280.778,256,276.36,256z M188.36,240h80v-16h-80V240z" data-original="#F5A329" class="active-path" data-old_color="#CA8929"/>
+</g></g> </svg>
