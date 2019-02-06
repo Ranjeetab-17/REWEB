@@ -1,0 +1,32 @@
+[
+    {
+        "Valuechain": "Foriegn Exchange",
+        "SilverMedal": "5",
+        "BronzeMedal": "10",
+        "GoldMedal": "3"
+    },
+    {
+        "Valuechain": "Derivatives",
+        "SilverMedal": "1",
+        "BronzeMedal": "8",
+        "GoldMedal": "3"
+    },
+    {
+        "Valuechain": "Foriegn Exchange",
+        "SilverMedal": "4",
+        "BronzeMedal": "9",
+        "GoldMedal": "10"
+    },
+    {
+        "Valuechain": "Foriegn Exchange",
+        "SilverMedal": "1",
+        "BronzeMedal": "2",
+        "GoldMedal": "10"
+    },
+    {
+        "Valuechain": "Foriegn Exchange",
+        "SilverMedal": "6",
+        "BronzeMedal": "7",
+        "GoldMedal": "9"
+    }
+]
