@@ -202,7 +202,7 @@ Apache License
    See the License for the specific language governing permissions and
    limitations under the License.
 
-pdfmake@0.1.40
+pdfmake@0.1.52
 MIT
 The MIT License (MIT)
 
